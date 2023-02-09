@@ -93,8 +93,13 @@ const CreatePost = () => {
       {/*----------------- title--------------- */}
       <div>
         <h1 className="font-extrabold text-black text-2xl">Create</h1>
-        <p className="mt-2 text-slate-500 text-md max-w-[500px]">
-          Create imaginative and visually stunning images through amazing AI.
+        <p className="mt-2 text-slate-500 text-md max-w-[800px]">
+          Our AI engine can create original, realistic images and art from a
+          text description. It can combine concepts, attributes, and styles.
+        </p>
+        <p className="mt-2 text-slate-500 text-md max-w-[800px]">
+          Don't believe us? Enter something in the Prompt below and hit
+          'Generate'!
         </p>
       </div>
       <form className="mt-16 max-w-3xl">

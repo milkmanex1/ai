@@ -21,3 +21,9 @@
   background-color: #666e75;
   border-radius: 5px;
 }
+
+/**------------- import Custom fonts---------------- */
+@font-face {
+  font-family: "Azonix";
+  src: url("./fonts/Azonix-1VB0.otf");
+}
