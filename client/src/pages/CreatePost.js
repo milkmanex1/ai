@@ -41,7 +41,7 @@ const CreatePost = () => {
           console.log(response);
           if (response.status === 500) {
             alert(
-              "Your prompt likely contains violent or adult language. Please remove them and try again"
+              "Your prompt may contain violent or adult language. Please remove them and try again. Otherwise, it may be a server issue."
             );
           }
         }
@@ -127,7 +127,7 @@ const CreatePost = () => {
           <div className=" flex gap-5">
             <button
               type="submit"
-              className="text-white bg-green-700 font-medium rounded-md text-sm sm:w-auto w-full  px-5 py-2.5 text-center"
+              className="text-white bg-green-700 font-medium rounded-md text-sm sm:w-auto w-full  px-5 py-2.5 text-center hover:bg-green-700/90"
               onClick={generate}
             >
               {generatingImg ? "Generating..." : "Generate"}
@@ -159,13 +159,12 @@ const CreatePost = () => {
 
         <div className="mt-10">
           <p className="mt-2 text-gray-500 text-md">
-            Once you have created the image you want, you can share it with
-            others in the community
+            Why not share your masterpiece with the community?
           </p>
           <button
             onClick={handleShare}
             type="submit"
-            className="mt-3 text-white bg-indigo-500 font-md rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center"
+            className="mt-3 text-white bg-indigo-500 font-md rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center hover:bg-indigo-500/90"
           >
             {loading ? "Sharing..." : "Share with the community"}
           </button>
